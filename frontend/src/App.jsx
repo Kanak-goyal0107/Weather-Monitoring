@@ -16,7 +16,7 @@ export default function App() {
   // 🔥 FETCH DATA FROM FLASK
   useEffect(() => {
     const fetchData = () => {
-      fetch("http://10.206.39.205:5000/get-data")
+      fetch("https://weather-monitoring-2zev.onrender.com/get-data")
         .then(res => res.json())
         .then(d => {
           console.log("DATA:", d);
